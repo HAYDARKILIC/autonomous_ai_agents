@@ -1,6 +1,6 @@
 <div align="center">
 
-# Agentic Context Engineering — From Scratch
+# Autonomous AI Agents & Context Engineering
 
 **Model Context Protocol servers, advanced RAG pipelines, and autonomous multi-agent systems — implemented from first principles, without high-level agent frameworks.**
 
@@ -46,7 +46,7 @@ Each week has a dedicated notebook in [`notebooks/`](notebooks/) covering the ma
 ## Repository Layout
 
 ```
-agentic-context-engineering-from-scratch/
+autonomous_ai_agents/
 ├── src/
 │   ├── mcp_core/            # Week 1 — MCP server, JSON-RPC transport, tool registry
 │   ├── rag_engine/          # Week 2 — chunkers, hierarchical indexer, HNSW, vector stores
@@ -68,7 +68,7 @@ agentic-context-engineering-from-scratch/
 ## Installation
 
 ```bash
-git clone https://github.com/HAYDARKILIC/agentic-context-engineering-from-scratch.git
+git clone https://github.com/HAYDARKILIC/autonomous_ai_agents.git
 cd agentic-context-engineering-from-scratch
 
 python -m venv .venv
@@ -182,7 +182,7 @@ Key papers cited in the modules: Yao et al. (ReAct, 2023); Gao et al. (HyDE, 202
   author = {Kılıç, Haydar},
   title  = {Agentic Context Engineering — From Scratch},
   year   = {2026},
-  url    = {https://github.com/HAYDARKILIC/agentic-context-engineering-from-scratch}
+  url    = {https://github.com/HAYDARKILIC/autonomous_ai_agents}
 }
 ```
 
