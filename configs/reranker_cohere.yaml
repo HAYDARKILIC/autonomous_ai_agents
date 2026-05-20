@@ -1,0 +1,6 @@
+# Cohere Rerank (managed re-ranker) configuration.
+
+reranker:
+  backend: "cohere"
+  model: "rerank-english-v3.0"
+  candidate_k: 50

@@ -1,0 +1,24 @@
+# MCP server configuration.
+# Used by `python -m src.mcp_core.server --config configs/mcp_server.yaml`.
+
+server:
+  name: "agentic-ce-mcp"
+  version: "0.1.0"
+
+filesystem:
+  enabled: true
+  sandbox_root: "./data/processed"
+
+sqlite:
+  enabled: true
+  db_path: "./data/papers.sqlite"
+
+tools:
+  - name: "calculator"
+    enabled: true
+  - name: "search_arxiv"
+    enabled: true
+
+logging:
+  level: "${LOG_LEVEL:-INFO}"
+  format: "${LOG_FORMAT:-console}"

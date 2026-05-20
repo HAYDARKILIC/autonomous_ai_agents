@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-context-engineering"
+version = "0.1.0"
+description = "Production-grade implementations of MCP, advanced RAG, and multi-agent systems — from scratch."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Haydar Kılıç" }]
+keywords = [
+    "model-context-protocol",
+    "mcp",
+    "retrieval-augmented-generation",
+    "rag",
+    "react-agent",
+    "multi-agent-systems",
+    "cross-encoder",
+    "hyde",
+    "hnsw",
+    "autonomous-agents",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/HAYDARKILIC/agentic-context-engineering-from-scratch"
+Repository = "https://github.com/HAYDARKILIC/agentic-context-engineering-from-scratch"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers --cov=src --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["*/__init__.py", "*/cli.py"]
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true

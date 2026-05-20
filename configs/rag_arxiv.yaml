@@ -1,0 +1,16 @@
+# Hierarchical RAG pipeline for the arXiv corpus.
+
+chunker:
+  strategy: "hierarchical"
+  parent_chars: 4000
+  child_chars: 800
+  child_overlap_chars: 100
+
+encoder:
+  model: "BAAI/bge-small-en-v1.5"
+  device: null         # auto-detect
+
+vector_store:
+  kind: "chroma"
+  collection: "arxiv_rag"
+  persist_dir: "${CHROMA_PERSIST_DIR:-./data/vector_store/chroma}"
