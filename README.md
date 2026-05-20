@@ -4,11 +4,6 @@
 
 **Model Context Protocol servers, advanced RAG pipelines, and autonomous multi-agent systems — implemented from first principles, without high-level agent frameworks.**
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![MCP](https://img.shields.io/badge/MCP-v0.4-purple.svg)](https://modelcontextprotocol.io)
-
 </div>
 
 ---
