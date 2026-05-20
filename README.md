@@ -69,7 +69,7 @@ autonomous_ai_agents/
 
 ```bash
 git clone https://github.com/HAYDARKILIC/autonomous_ai_agents.git
-cd agentic-context-engineering-from-scratch
+cd autonomous_ai_agents
 
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
@@ -174,17 +174,6 @@ CI runs lint, type-check, and tests on every push and fails below 85% coverage.
 Key papers cited in the modules: Yao et al. (ReAct, 2023); Gao et al. (HyDE, 2022); Malkov & Yashunin (HNSW, 2018); Reimers & Gurevych (Sentence-BERT, 2019); Anthropic (Model Context Protocol Specification).
 
 ---
-
-## Citation
-
-```bibtex
-@software{kilic2026_agentic_context,
-  author = {Kılıç, Haydar},
-  title  = {Agentic Context Engineering — From Scratch},
-  year   = {2026},
-  url    = {https://github.com/HAYDARKILIC/autonomous_ai_agents}
-}
-```
 
 ## License
 
